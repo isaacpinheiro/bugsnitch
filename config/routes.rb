@@ -22,6 +22,11 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :contato
+  resources :equipe
+  resources :sobre
+  resources :termos
+
   root 'usuarios#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
