@@ -22,10 +22,10 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :contato
-  resources :equipe
-  resources :sobre
-  resources :termos
+  get 'contato' => 'contato#index'
+  get 'equipe' => 'equipe#index'
+  get 'sobre' => 'sobre#index'
+  get 'termos' => 'termos#index'
 
   root 'usuarios#new'
 
