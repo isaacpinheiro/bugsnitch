@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_hora: 2016-05-31 17:23:07
+  resumo: MyText
+  prioridade: MyString
+  severidade: MyString
+  status: false
+  usuario_projeto_id: 
+
+two:
+  data_hora: 2016-05-31 17:23:07
+  resumo: MyText
+  prioridade: MyString
+  severidade: MyString
+  status: false
+  usuario_projeto_id: 
