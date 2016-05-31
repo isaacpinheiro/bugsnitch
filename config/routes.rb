@@ -1,10 +1,29 @@
 Rails.application.routes.draw do
-  resources :anexos
-  resources :comentarios
-  resources :registros
-  resources :usuario_projetos
-  resources :projetos
-  resources :usuarios
+
+  resources :usuarios do
+    resources :usuario_projetos do
+      resources :registros do
+        resources :comentarios do
+          resources :anexos
+        end
+        resources :anexos
+      end
+    end
+  end
+
+  resources :projetos do
+    resources :usuario_projetos do
+      resources :registros do
+        resources :comentarios do
+          resources :anexos
+        end
+        resources :anexos
+      end
+    end
+  end
+
+  root 'usuarios#new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
