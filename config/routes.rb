@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'equipe' => 'equipe#index'
   get 'sobre' => 'sobre#index'
   get 'termos' => 'termos#index'
+  get 'sign_in' => "sign_in#index"
 
   root 'usuarios#new'
 
